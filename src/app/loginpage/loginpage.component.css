@@ -1,0 +1,20 @@
+.bg-trans{
+    background-color: transparent !important;
+}
+
+.margin-left-trans-1{
+    margin-left: -10px !important;
+}
+
+.margin-left-trans-2{
+    margin-left: -20px !important;
+}
+
+.margin-left-trans-3{
+    margin-left: -30px !important;
+}
+
+.margin-normal{
+    margin-left: 0px !important;
+    transition: .5s all ease;
+}

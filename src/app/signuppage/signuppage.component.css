@@ -1,0 +1,36 @@
+.bg-trans{
+    background-color: transparent !important;
+}
+
+.margin-left-trans-1{
+    margin-left: 10px !important;
+}
+
+.margin-left-trans-2{
+    margin-left: 20px !important;
+}
+
+.margin-left-trans-3{
+    margin-left: 30px !important;
+}
+
+.margin-left-trans-4{
+    margin-left: 40px !important;
+}
+
+.margin-normal{
+    margin-left: 0px !important;
+    transition: all .5s ease;
+}
+
+@keyframes move-right{
+    0% {margin-left:40px}
+    70% { margin-left: 10px}
+    100% {margin-left:0px}
+}
+
+.move-l-1{
+    animation-name: move-right;
+    animation-delay: 2s;
+    animation-duration: .5s
+}

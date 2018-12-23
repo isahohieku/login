@@ -1,3 +1,24 @@
-<p>
-  home works!
-</p>
+<div class="main-wrapper w-100">
+  <div class="image-holder" [ngClass]="toggle ? 'image-holder-trans': ''">
+    <img src="assets/img/fern2.jpg" alt="" class="w-100">
+  </div>
+
+  <!-- Dark Background -->
+  <div class="dark-bg" [ngClass]="toggle ? 'dark-bg-trans': ''">
+    
+  </div>
+
+  <!-- Append Sign in Form -->
+  <div class="signin-wrapper" [ngClass]="toggle ? 'opacity': ' fadeIn'">
+    <app-loginpage></app-loginpage>
+  </div>
+
+  <!-- Append Sign up Form -->
+  <div class="signup-wrapper" [ngClass]="!toggle ? 'opacity': ' fadeIn'">
+    <app-signuppage></app-signuppage>
+  </div>
+
+  <!-- SIgnin/Signup Button -->
+  <a class="btn bg-green text-light position-absolute toggleButton"  [ngClass]="toggle ? 'toggleButton-trans': ''" (click)='ToggleState($event)'>{{ buttonValue }}</a>
+</div>
+ 

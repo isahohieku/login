@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app.service';
 
 @Component({
   selector: 'app-signuppage',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignuppageComponent implements OnInit {
 
-  constructor() { }
+  toggleMove: boolean;
+  toggleAnimation: boolean;
+  constructor(private toggleservice: AppService) {
+    this.toggleAnimation = false;
+  }
 
   ngOnInit() {
+    this.toggleMove = this.toggleservice.toggleButton;
   }
 
 }

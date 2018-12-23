@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto|Sarabun');
+
+$color-green:#305a33;
+
+.main-wrapper{
+    position: relative;
+}
+
+input[type='text'], input[type='email'], input[type='password']{
+    border: 0px;
+    border-bottom:  1px solid #3a4c3b;
+    border-radius: 0px !important;
+    outline: none !important;
+    font-weight: 200 !important;
+
+    &:focus, &:active{
+        outline: none !important;
+    }
+}
+
+input::placeholder{
+    color: darken($color: #fefefe, $amount: 30) !important;
+}
+
+.signin-wrapper{
+    width: 50vw;
+    position: absolute;
+    top: 10px;
+}
+
+.signup-wrapper{
+    width: 50vw;
+    position: absolute;
+    top: 10px;
+    left: 50vw;
+}
+
+.bg-green{
+    background-color:$color-green;
+}
+
+.linkStyle{
+    &:hover{
+        color: lighten($color: $color-green, $amount: 10);
+    }
+
+    &:visited, &link{
+        color:$color-green;
+    }
+}
+
+.text-green{
+    color: $color-green;
+}
+
+.text-light{
+    color: darken($color: #fefefe, $amount: 10) !important;
+}
+
+.btn{
+    border-radius: 200px !important;
+    width: 200px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    padding: 0px !important;
+
+    &:hover{
+        background-color: lighten($color: $color-green, $amount: 10) !important;
+    }
+}
+
+.duration--5s {
+    animation-duration: .5s;
+}
+
+.delay--5s {
+    animation-delay: .5s
+}
+
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.fadeOut{
+    animation: fadeOut;
+    animation-duration: .5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    30% {opacity: .5;}
+    100% { opacity: 1;}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    30% {opacity: .5;}
+    100% {opacity: 0;}
+}
+
+.font-weight-light{
+    font-weight: 200 !important;
+}
