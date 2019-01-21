@@ -38,6 +38,8 @@ export class LoginpageComponent implements OnInit {
     this.createForm();
     this.createFormControlSignup();
     this.createFormSignup();
+    this.appService.toggleButton = true;
+    this.toggleAnimation = this.appService.toggleButton;
   }
 
   createFormControl() {
