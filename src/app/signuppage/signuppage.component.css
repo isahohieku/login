@@ -34,3 +34,7 @@
     animation-delay: 2s;
     animation-duration: .5s
 }
+
+input:focus{
+    outline: none !important;
+}

@@ -11,16 +11,31 @@ input[type='text'], input[type='email'], input[type='password']{
     border: 0px;
     border-bottom:  1px solid #3a4c3b;
     border-radius: 0px !important;
-    outline: none !important;
     font-weight: 200 !important;
 
-    &:focus, &:active{
+    &:focus{
         outline: none !important;
+        -webkit-appearance: none !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid #3a4c3b !important;
     }
 }
 
 input::placeholder{
     color: darken($color: #fefefe, $amount: 30) !important;
+}
+
+button{
+    &:focus{
+        box-shadow: none !important;
+        outline: none !important;
+        -webkit-appearance: none !important;
+    }
+
+    &:active{
+        margin-top: 5px !important;
+        margin-left: 2px;
+    }
 }
 
 .signin-wrapper{
@@ -42,10 +57,10 @@ input::placeholder{
 
 .linkStyle{
     &:hover{
-        color: lighten($color: $color-green, $amount: 10);
+        color: lighten($color: $color-green, $amount: 10) !important;
     }
 
-    &:visited, &link{
+    &:link, &:visited{
         color:$color-green;
     }
 }
